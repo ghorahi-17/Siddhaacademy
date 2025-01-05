@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <title>Siddha Academy Navigation Bar</title>
+  
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Siddha Academy Logo">
+            <h1>Siddha Academy</h1>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="admissions.html">admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button>
+                <img src="images/search.png" alt="Search" style="width: 16px; height: 16px;">
+            </button>
+        </div>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.navbar ul');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
